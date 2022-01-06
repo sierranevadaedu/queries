@@ -1,0 +1,12 @@
+mutation RegisterUser($docRegisterInput: DocCreateWithoutUserInput!, $userRegisterInput: UserCreateWithoutDocInput!) {
+  register(DocRegisterInput: $docRegisterInput, UserRegisterInput: $userRegisterInput) {
+    errors {
+      field
+      msg
+    }
+    data {
+      id
+      username
+    }
+  }
+}
