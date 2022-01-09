@@ -5,8 +5,7 @@ mutation LoginUser($userLoginInput: UserLoginInput!) {
       msg
     }
     data {
-      id,
-      username
+      ...UserResponse
     }
   }
 }

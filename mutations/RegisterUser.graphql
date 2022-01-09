@@ -1,12 +1,11 @@
-mutation RegisterUser($docRegisterInput: DocCreateWithoutUserInput!, $userRegisterInput: UserCreateWithoutDocInput!) {
-  register(DocRegisterInput: $docRegisterInput, UserRegisterInput: $userRegisterInput) {
+mutation RegisterUser($docRegisterInput: DocCreateWithoutUserInput!, $userRegisterInput: UserCreateWithoutDocInput!, $createStudent: Boolean, $createProfessor: Boolean) {
+  register(DocRegisterInput: $docRegisterInput, UserRegisterInput: $userRegisterInput, CreateStudent: $createStudent, CreateProfessor: $createProfessor) {
     errors {
       field
       msg
     }
     data {
-      id
-      username
+      ...UserResponse
     }
   }
 }

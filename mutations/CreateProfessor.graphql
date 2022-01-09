@@ -2,9 +2,5 @@ mutation CreateProfessor($data: ProfessorCreateInput!) {
   createProfessor(data: $data) {
     id
     userId
-    createdAt
-    updatedAt
-    isAdmin
-    departmentId
   }
 }
