@@ -1,5 +1,5 @@
-mutation RegisterUser($docRegisterInput: DocCreateWithoutUserInput!, $userRegisterInput: UserCreateWithoutDocInput!, $createStudent: Boolean, $createProfessor: Boolean) {
-  register(DocRegisterInput: $docRegisterInput, UserRegisterInput: $userRegisterInput, CreateStudent: $createStudent, CreateProfessor: $createProfessor) {
+mutation RegisterUser($userRegisterInput: UserRegisterInput!) {
+  register(UserRegisterInput: $userRegisterInput) {
     errors {
       field
       msg

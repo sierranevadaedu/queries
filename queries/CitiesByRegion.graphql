@@ -1,0 +1,6 @@
+query CitiesByRegion($regionId: Int!) {
+  citiesByRegion(regionId: $regionId) {
+    id
+    city
+  }
+}

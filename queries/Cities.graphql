@@ -1,6 +1,0 @@
-query Cities($where: CityWhereInput) {
-  cities(where: $where) {
-    id
-    city
-  }
-}
