@@ -1,5 +1,14 @@
 query Professors {
   professors {
-    ...UserResponse
+    id
+    user {
+      ...UserResponse
+    }
+    department {
+      name
+    }
+    campus {
+      name
+    }
   }
 }
