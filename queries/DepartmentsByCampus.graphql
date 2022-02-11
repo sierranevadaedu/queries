@@ -1,0 +1,6 @@
+query DepartmentsByCampus($campusId: Int!){
+  departmentsByCampus(campusId: $campusId) {
+    id
+    name
+  }
+}
