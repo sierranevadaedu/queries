@@ -1,5 +1,7 @@
 fragment UserResponse on User {
   id
+  docId
+  documentType
   username
   role
   isAdmin
@@ -8,4 +10,12 @@ fragment UserResponse on User {
   lastName
   secondLastName
   email
+  blood
+  sex
+  stratum
+  addressLine1
+  addressLine2
+  phone
+  birthdate
+  cityId
 }
