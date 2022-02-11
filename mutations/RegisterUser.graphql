@@ -1,8 +1,7 @@
 mutation RegisterUser($userRegisterInput: UserRegisterInput!) {
   register(UserRegisterInput: $userRegisterInput) {
     errors {
-      field
-      msg
+      ...ErrorFragment
     }
     data {
       ...UserResponse
