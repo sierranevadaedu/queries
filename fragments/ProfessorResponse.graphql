@@ -1,0 +1,14 @@
+fragment ProfessorResponse on Professor {
+  id
+  departmentId
+  campusId
+  user {
+    ...UserResponse
+  }
+  department {
+    name
+  }
+  campus {
+    name
+  }
+}
