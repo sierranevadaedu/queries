@@ -1,6 +1,0 @@
-# mutation CreateProfessor($data: ProfessorCreateInput!) {
-#   createProfessor(data: $data) {
-#     id
-#     userId
-#   }
-# }
