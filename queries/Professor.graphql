@@ -1,0 +1,5 @@
+query Professor($id: ID!) {
+  professor(id: $id) {
+    ...ProfessorResponse
+  }
+}
