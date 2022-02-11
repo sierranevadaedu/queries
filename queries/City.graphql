@@ -1,0 +1,6 @@
+query City($id: Int!) {
+  city(id: $id) {
+    id
+    regionId
+  }
+}
