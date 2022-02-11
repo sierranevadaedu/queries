@@ -1,0 +1,10 @@
+mutation UpdateProfessor($id: ID!, $departmentData: UpdateDepartment!) {
+  updateProfessor(id: $id, departmentData: $departmentData) {
+    errors {
+      ...ErrorFragment
+    }
+    data {
+      ...ProfessorResponse
+    }
+  }
+}
