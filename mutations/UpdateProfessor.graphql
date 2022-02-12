@@ -1,4 +1,4 @@
-mutation UpdateProfessor($id: ID!, $departmentData: UpdateDepartment!) {
+mutation UpdateProfessor($id: Int!, $departmentData: UpdateDepartment!) {
   updateProfessor(id: $id, departmentData: $departmentData) {
     errors {
       ...ErrorFragment

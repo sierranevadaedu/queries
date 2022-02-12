@@ -1,0 +1,10 @@
+mutation UpdateUser($id: Int!, $UserUpdateInput: UserUpdateInput!) {
+  updateUser(id: $id, UserUpdateInput: $UserUpdateInput) {
+    errors {
+      ...ErrorFragment
+    }
+    data {
+      ...UserResponse
+    }
+  }
+}

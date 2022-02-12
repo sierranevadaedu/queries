@@ -1,4 +1,4 @@
-query Professor($id: ID!) {
+query Professor($id: Int!) {
   professor(id: $id) {
     ...ProfessorResponse
   }

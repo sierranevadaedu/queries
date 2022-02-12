@@ -1,6 +1,5 @@
-query Campuses {
+query CampusesWithoutStudents {
   campuses {
     ...CampusResponse
-    students
   }
 }

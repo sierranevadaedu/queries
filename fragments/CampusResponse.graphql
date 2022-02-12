@@ -1,0 +1,4 @@
+fragment CampusResponse on Campus {
+  id
+  name
+}
