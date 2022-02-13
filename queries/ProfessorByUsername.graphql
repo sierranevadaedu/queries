@@ -1,0 +1,5 @@
+query ProfessorByUsername($username: String!) {
+  professorByUsername(username: $username) {
+    ...ProfessorResponse
+  }
+}
