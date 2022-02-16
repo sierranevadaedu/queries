@@ -1,0 +1,8 @@
+query Periods($year: Int!) {
+  periods(year: $year) {
+    id
+    value
+    startsAt
+    endsAt
+  }
+}

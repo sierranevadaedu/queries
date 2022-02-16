@@ -1,0 +1,7 @@
+mutation CreateAcademicYear($args: AcademicYearInput!) {
+  createAcademicYear(args: $args) {
+    id
+    startsAt
+    endsAt
+  }
+}
