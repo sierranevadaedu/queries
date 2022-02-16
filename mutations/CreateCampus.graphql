@@ -1,0 +1,12 @@
+mutation CreateCampus($campusCreateInput: CampusCreateInput!) {
+	createCampus(CampusCreateInput: $campusCreateInput) {
+    errors {
+      field
+      msg
+    }
+    data {
+      id
+      name
+    }
+  }
+}

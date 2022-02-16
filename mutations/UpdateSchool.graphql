@@ -1,0 +1,5 @@
+mutation UpdateSchool($name: String!) {
+  updateSchool(name: $name) {
+    name
+  }
+}

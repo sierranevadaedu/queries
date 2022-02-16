@@ -1,0 +1,10 @@
+mutation UpdateCampus($name: String!, $args: CampusUpdateInput!) {
+  updateCampus(name: $name, CampusUpdateInput: $args) {
+    errors {
+      ...ErrorFragment
+    }
+    data {
+      ...CampusResponse
+    }
+  }
+}
