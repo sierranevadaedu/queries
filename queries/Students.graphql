@@ -1,8 +1,5 @@
 query Students {
   students {
-    isActive
-    user {
-      ...UserResponse
-    }
+    ...StudentResponse
   }
 }

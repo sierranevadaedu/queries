@@ -1,0 +1,7 @@
+fragment StudentResponse on Student {
+  id
+  isActive
+  user {
+    ...UserResponse
+  }
+}

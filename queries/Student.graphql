@@ -1,0 +1,5 @@
+query Student($id: Int!) {
+  student(id: $id) {
+    ...StudentResponse
+  }
+}
