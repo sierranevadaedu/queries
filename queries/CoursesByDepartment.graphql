@@ -1,0 +1,5 @@
+query CoursesByDepartment($departmentId: Int!) {
+  coursesByDepartment(departmentId: $departmentId) {
+    ...CourseResponse
+  }
+}

@@ -1,0 +1,6 @@
+query Campus($id: Int!) {
+  campus(id: $id) {
+    id
+    name
+  }
+}

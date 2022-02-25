@@ -1,0 +1,9 @@
+query Registrations($studentId: Int!) {
+  registrations(studentId: $studentId) {
+    id
+    createdAt
+    updatedAt
+    academicYearId
+    courseGroup
+  }
+}

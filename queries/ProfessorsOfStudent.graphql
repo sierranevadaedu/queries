@@ -1,0 +1,5 @@
+query ProfessorsOfStudent($studentId: Int!) {
+  professorsOf(studentId: $studentId) {
+    ...ProfessorResponse
+  }
+}

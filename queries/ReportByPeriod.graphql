@@ -1,0 +1,12 @@
+query ReportByPeriod($studentId: Int!, $periodId: Int!, $year: Int!) {
+  reportByPeriod(studentId: $studentId, periodId: $periodId, year: $year) {
+    ...StudentResponse
+    reports {
+      year
+      period
+      courseName
+      avg
+      missedClasses
+    }
+  }
+}
