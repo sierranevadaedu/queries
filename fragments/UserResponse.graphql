@@ -5,6 +5,8 @@ fragment UserResponse on User {
   username
   role
   isAdmin
+  name
+  fullName
   firstName
   secondName
   lastName
