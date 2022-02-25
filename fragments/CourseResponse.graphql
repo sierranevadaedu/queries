@@ -1,0 +1,4 @@
+fragment CourseResponse on Course {
+  id
+  description
+}
