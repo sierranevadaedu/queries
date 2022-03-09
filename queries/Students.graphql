@@ -1,5 +1,9 @@
-query Students {
-  students {
-    ...StudentResponse
+query Students($limit: Int!, $cursor: String) { 
+	students(limit: $limit, cursor: $cursor) {
+    items {
+      ...StudentResponse
+    }
+    hasMore
+    total
   }
 }

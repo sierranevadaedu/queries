@@ -2,6 +2,8 @@ fragment ProfessorResponse on Professor {
   id
   departmentId
   campusId
+  createdAt
+  updatedAt
   user {
     ...UserResponse
   }

@@ -1,6 +1,8 @@
 fragment StudentResponse on Student {
   id
   isActive
+  createdAt
+  updatedAt
   user {
     ...UserResponse
   }
